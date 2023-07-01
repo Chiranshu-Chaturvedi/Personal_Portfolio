@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(2, 2, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(3, 3, 71);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: turquoise;
+    font-size: 1.15rem;
+}
+
+.left {
+    font-size: 2.5rem;
+    margin-left: 27px;
+}
+
+.color {
+    color: rgb(55, 223, 223);
+}
+
+.title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 80px;
+}
+
+.title .big-text {
+    position: absolute;
+    left: 35%;
+    top: 24.5%;
+    color: rgb(28, 28, 54);
+    z-index: -1;
+    font-size: 4.5rem;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+    padding: 0rem 11rem;
+    padding-bottom: 30px;
+}
+
+.content-con {
+    display: flex;
+    padding-top: 3.5rem;
+}
+
+.left-contact {
+    flex: 2;
+}
+
+.left-contact h4 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.left-contact p {
+    margin: 1rem 0;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-item p {
+    margin: 0.3rem 0 !important;
+    padding: 0 !important;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+.icon i {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.icon span {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.contact-icon {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contact-icon a {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(28, 28, 53);
+    cursor: pointer;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 .4rem;
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+}
+
+.contact-icon a:hover {
+    background-color: turquoise;
+    color: black;
+    text-decoration: none;
+}
+
+.contact-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid aqua;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+.btn-text {
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+
+.btn-icon {
+    background-color: aqua;
+    color: black;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.main-btn:hover {
+    background-color: aqua;
+    transition: all .8s ease-out;
+}
+
+.main-btn:hover .btn-icon {
+    border: 2px solid black;
+}
+
+.main-btn:hover .btn-text {
+    color: black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+
+    .left-contact {
+        flex: 1;
+    }
+
+    .contact {
+        padding: 0rem 2rem;
+    }
+
+    .main-btn {
+        margin-left: 30%;
+    }
+    .title .big-text{
+        top: 38.5%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+    .contact .title{
+         font-size: 1.9rem;
+    }
+    .left-contact h4 {
+        font-size: 1.4rem;
+    }
+
+    .left-contact p {
+        font-size: .8rem;
+    }
+    .icon i{
+       font-size: 1.2rem;
+    }
+    .icon span{
+        margin-left: 0;
+    }
+
+    .submit-btn {
+        justify-content: center;
+    }
+
+    .main-btn {
+        margin-left: 14%;
+    }
+    .title .big-text{
+        top: 38%;
+        font-size: 3.7rem;
+        font-weight: 800px;
+        left: 18%;
+    }
+}

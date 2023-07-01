@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 33);
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(3, 3, 71);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 25px;
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: turquoise;
+    font-size: 1.15rem;
+}
+
+.left {
+    font-size: 2.5rem;
+    margin-left: 27px;
+}
+
+.firstS {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.firstS > div {
+    width: 55%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+    margin-top: 95px;
+    margin-left: 200px;
+}
+
+.rightsection img {
+    width: 59%;
+    height: auto;
+    margin-left: 70px;
+    border: 3.5px solid turquoise;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.color {
+    color: rgb(55, 223, 223);
+}
+
+#element {
+    color: aqua;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid aqua;
+    text-decoration: none;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.btn-text {
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+
+.btn-icon {
+    background-color: aqua;
+    color: black;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.main-btn:hover {
+    background-color: aqua;
+    transition: all 0.8s ease-out;
+}
+
+.main-btn:hover .btn-icon {
+    border: 2px solid black;
+}
+
+.main-btn:hover .btn-text {
+    color: black;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+    nav ul {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+
+    .firstS {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .firstS > div {
+        width: 80%;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .rightsection img {
+        width: 80%;
+        justify-content: center;
+        max-width: 90%;
+        height: 40%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .main-btn {
+        margin-top: 50px;
+        margin-left: 25%;
+    }
+    .left {
+        font-size: 2rem;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstS {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .firstS > div {
+        width: 80%;
+    }
+
+    .leftsection {
+        font-size: 1.4rem;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .rightsection img {
+        width: 100%;
+        margin: 30px 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-btn {
+        margin-top: 50px;
+        margin-left: 21%;
+    }
+
+    .btn-text {
+        font-size: 1rem;
+    }
+
+    .btn-icon {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+}

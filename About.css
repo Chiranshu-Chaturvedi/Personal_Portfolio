@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(3, 3, 71);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: turquoise;
+    font-size: 1.18rem;
+}
+
+.left {
+    font-size: 2.5rem;
+    margin-left: 27px;
+}
+
+.firstS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.firstS > div {
+    width: 37%;
+}
+
+.leftsection {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.leftsection > div {
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 3rem;
+}
+
+.leftsection .div-2 {
+    margin-left: 29px;
+    font-size: 1.5rem;
+}
+
+.rightsection {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightsection img {
+    width: 80%;
+    height: auto;
+    margin-top: 85px;
+    border: 3.5px solid turquoise;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.color {
+    color: rgb(55, 223, 223);
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(3, 3, 99);
+    border: none;
+}
+
+.secondS {
+    padding: 30px 60px 100px 60px;
+}
+
+.secondS .p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 2.5cm;
+    font-size: 3.2rem;
+}
+
+.progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    column-gap: 9rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar .prog-title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.progress-bar .prog-title .icon {
+    font-size: 45px;
+}
+
+.progress-bar .progress {
+    width: 100%;
+    height: 0.55rem;
+    background-color: rgb(72, 72, 72);
+    margin-left: 1rem;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-bar .progress .html {
+    width: 80%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+.progress-bar .progress .css {
+    width: 70%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+.progress-bar .progress .js {
+    width: 50%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+.progress-bar .progress .python {
+    width: 65%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+.progress-bar .progress .c {
+    width: 45%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+.progress-bar .progress .react {
+    width: 10%;
+    height: 0.55rem;
+    background-color: teal;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstS > div {
+        width: 90%;
+    }
+
+    .leftsection {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .leftsection > div {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 2.5rem;
+    }
+
+    .leftsection .div-2 {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .rightsection img {
+        width: 100%;
+        margin: 40px 0;
+        max-width: 100%;
+        height: 85%;
+    }
+
+    .secondS {
+        padding: 30px 20px 100px 20px;
+    }
+
+    .secondS .p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 15px;
+        font-size: 1rem;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstS {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .firstS > div {
+        width: 90%;
+    }
+
+    .leftsection {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .leftsection > div {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 2.5rem;
+    }
+
+    .leftsection .div-2 {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .rightsection img {
+        width: 100%;
+        margin: 40px 0;
+        max-width: 100%;
+        height: 85%;
+    }
+
+    hr {
+        margin-top: 1cm;
+    }
+
+    .secondS {
+        padding: 30px 20px 100px 20px;
+    }
+
+    .secondS .p {
+        font-size: 2.5rem;
+    }
+
+    .progress-bars {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        column-gap: 0;
+    }
+
+    .progress-bar .progress {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
