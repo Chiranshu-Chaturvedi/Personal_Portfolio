@@ -84,6 +84,9 @@ nav ul li a:hover {
     font-size: 2.3rem;
     text-transform: uppercase;
 }
+.left-contact .dis{
+    line-height: 1.5rem;
+}
 
 .left-contact p {
     margin: 1rem 0;
@@ -216,7 +219,7 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 15px;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .left-contact {
@@ -234,9 +237,12 @@ nav ul li a:hover {
         top: 38.5%;
         left: 20%;
     }
+    .contact .title{
+        font-size: 2.7rem;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 415px), (max-width:440px){
     nav {
         flex-direction: column;
         justify-content: center;
@@ -251,17 +257,27 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 15px;
-        font-size: 1rem;
+    }
+    nav ul li a{
+        font-size: 0.9rem;
+    }
+    nav ul li a:hover {
+        color: turquoise;
+        font-size: 0.94rem;
     }
     .contact .title{
-         font-size: 1.9rem;
+         font-size: 1.8rem;
     }
     .left-contact h4 {
         font-size: 1.4rem;
     }
 
     .left-contact p {
+        font-size: .74rem;
+    }
+    .left-contact .dis {
         font-size: .8rem;
+        line-height: 1.3rem;
     }
     .icon i{
        font-size: 1.2rem;
@@ -273,14 +289,28 @@ nav ul li a:hover {
     .submit-btn {
         justify-content: center;
     }
-
+    
     .main-btn {
-        margin-left: 14%;
+        margin-left: 5%;
+        font-weight: 200;
+        margin-bottom: 30px;
+
+    }
+    .btn-text{
+        font-size: 1rem;
+    }
+    .btn-icon{
+        font-size: 1.1rem
     }
     .title .big-text{
         top: 38%;
-        font-size: 3.7rem;
+        font-size: 3.4rem;
         font-weight: 800px;
-        left: 18%;
+        left: 15%;
     }
+    .content-con{
+        padding-top: 1rem;
+    }
+    
 }
+
