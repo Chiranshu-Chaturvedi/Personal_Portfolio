@@ -265,6 +265,9 @@ nav ul li a:hover {
         color: turquoise;
         font-size: 0.94rem;
     }
+    .left {
+        font-size: 2rem;
+    }
     .contact .title{
          font-size: 1.7rem;
     }
@@ -303,10 +306,10 @@ nav ul li a:hover {
         font-size: 1.1rem
     }
     .title .big-text{
-        top: 38%;
+        top: 30%;
         font-size: 3.4rem;
         font-weight: 800px;
-        left: 15%;
+        left: 19%;
     }
     .content-con{
         padding-top: 1rem;
