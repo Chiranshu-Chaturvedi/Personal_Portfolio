@@ -182,7 +182,7 @@ nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 440px) {
     nav {
         flex-direction: column;
         justify-content: center;
